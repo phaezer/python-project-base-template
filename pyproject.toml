@@ -66,28 +66,27 @@ skip-magic-trailing-comma = false
 # Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
 # McCabe complexity (`C901`) by default.
 select = [
-  # pycodestyle (E, W)
-  "E1",
+  "E1", # pycodestyle (E, W)
   "E4",
   "E7",
   "E9",
   "C", # mccabe (C)
   "D1", # pydocstyle (D)
-  "D3", # flake8-annotations (ANN)
+  "D3",
   "F",
   "I", # isort (I)
-  "ANN0",
-  "ANN2", # flake8-async (ASYNC)
-  "ASYNC", # flake8-2020 (YTT) - python version checks
-  "YTT", # bandit (S)
-  "S", # flake8-blind-except (BLE)
-  "BLE", # flake8-bugbear (B)
-  "B", # flake8-builtins (A)
-  "A", # flake8-comprehensions (C4)
-  "C", # Error (PLE)
-  "PLE", # refurb (FURB)
-  "FURB", # Ruff-specific rules (RUF)
-  "RUF00",
+  "ANN0", # flake8-annotations (ANN)
+  "ANN2",
+  "ASYNC", # flake8-async (ASYNC)
+  "YTT", # flake8-2020 (YTT) - python version checks
+  "S", # bandit (S)
+  "BLE", # flake8-blind-except (BLE)
+  "B", # flake8-bugbear (B)
+  "A", # flake8-builtins (A)
+  "C", # flake8-comprehensions (C) # Error (PLE)
+  "PLE", # Error (PLE)
+  "FURB", # refurb (FURB)
+  "RUF00", # Ruff-specific rules (RUF)
   "RUF03",
   "RUF058",
   "RUF060",
